@@ -1,0 +1,25 @@
+@media screen and (max-width: 1360px) {
+    .container {
+        width: 969px;
+    }
+    
+    header > div > div {
+        width: 969px;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    .menu {
+        height: auto;
+    }
+    
+    .content {
+        margin-left: 0px;
+    }
+    
+    .menuico {
+        cursor: pointer;
+    }
+}

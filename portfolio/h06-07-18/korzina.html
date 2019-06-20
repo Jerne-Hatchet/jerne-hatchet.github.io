@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Корзина</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <script src="js/custom.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="uk-container uk-container-center container">
+                <div>
+                <div class="uk-flex header">
+                    <div>
+                        <div>
+                            <img alt="" src="img/logo.png">
+                        </div>
+                        <div class="menuico" onclick="spoiler('nav')">
+                            <img alt="" src="img/menuico.png">
+                        </div>
+                        <div class="menuico">
+                            <img alt="" src="img/filtericog.png">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="phone">
+                            <div class="uk-text-uppercase textblue"><b>Самара</b> <img alt="" src="img/down.png"></div>
+                            <div class="textgreyd">8 (846) 991-88-85</div>
+                        </div>
+                        <div class="cart">
+                            <div><img alt="" src="img/cart.png"></div>
+                            <div><div>0 товаров</div>
+                                <div>0 рублей</div></div>
+                        </div>
+                    </div>
+                    </div></div>  
+            </div>
+        </header>
+        
+        <nav class="uk-container uk-container-center container" id="nav">
+                <ul class="uk-text-uppercase textwhite menu">
+                    <li><a href=""><div class="ico"><img alt="" src="img/menu/m1.png"></div><div>Раки</div></a></li>
+                    <li><a href=""><div class="ico"><img alt="" src="img/menu/m2.png"></div><div>Морепродукты и рыба</div></a></li>
+                    <li><a href=""><div class="ico"><img alt="" src="img/menu/m3.png"></div><div>Икра</div></a></li>
+                    <li><a href=""><div class="ico"><img alt="" src="img/menu/m4.png"></div><div>Букет из раков</div></a></li>
+                    <li><a href=""><div class="ico"><img alt="" src="img/menu/m5.png"></div><div>Специи</div></a></li>
+                    <li><a href=""><div class="ico"><img alt="" src="img/menu/m6.png"></div><div>Пицца</div></a></li>
+                </ul>
+        </nav>
+        
+        <section>
+            <div class="uk-container uk-container-center container">
+                <div class="content content-text content-first">
+                    <ul class="uk-breadcrumb breadcrumb">
+                        <li><a href="">Главная</a></li>
+                        <li><a href="">Корзина</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+ 
+        <section>
+            <div class="uk-container uk-container-center container">
+                <div class="content content-text">
+                    
+                    <p class="h1">1. Проверьте свой заказ</p>
+                    
+                    <table class="uk-table uk-table-divider table table-cart">
+                                <thead>
+                                    <tr>
+                                        <th>№</th>                        
+                                        <th>Фото</th>
+                                        <th>Товар</th>
+                                        <th>Вариант фасовки</th>
+                                        <th>Цена</th>
+                                        <th>Количество</th>
+                                        <th>Сумма</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="uk-table-middle">
+                                    <tr>
+                                        <td class="textsmall">1.</td>
+                                        <td><img alt="" src="img/products/product5min.jpg"></td>
+                                        <td>Икра горбуши</td>
+                                        <td>
+                                            <select>
+                                                    <option>100 гр</option>
+                                                    <option>200 гр</option>
+                                            </select>
+                                        </td>
+                                        <td class="textsmall">430 руб.</td>
+                                        <td><div class="amount"><div>-</div><input type="text" value="10"><div>+</div></div></td>
+                                        <td class="textlarge">4300 руб.</td>
+                                        <td><a href=""><img alt="" src="img/delete.png"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2.</td>
+                                        <td><img alt="" src="img/products/product2min.jpg"></td>
+                                        <td>Креветка гренландия 90\120</td>
+                                        <td>
+                                            <select>
+                                                    <option>1 кг</option>
+                                                    <option>2 кг</option>
+                                            </select>
+                                        </td>
+                                        <td>750 руб.</td>
+                                        <td><div class="amount"><div>-</div><input type="text" value="2"><div>+</div></div></td>
+                                        <td>1500 руб.</td>
+                                        <td><a href=""><img alt="" src="img/delete.png"></a></td>
+                                    </tr>
+                            </tbody>
+                    </table>
+                    
+                    <div class="uk-flex uk-flex-middle uk-flex-right uk-margin-bottom">
+                        <div><a href="" class="button"><div>Пересчитать</div></a></div>
+                        <div class="uk-margin-left uk-margin-right uk-text-uppercase">Стоимость заказа:</div>
+                        <div><span class="textxlarge">5800</span> руб.</div>
+                    </div>
+                    
+                    <div class="blockgrey uk-flex uk-flex-middle uk-flex-between">
+                        <div>У вас День рождения? Получите скидку 15%! <br>
+                            Предложение действительно при предьявлении документа.</div>
+                        <div><a class="button"><div>Пересчитать корзину с учетом скидки</div></a></div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+        
+        <section>
+            <div class="uk-container uk-container-center container">
+                <div class="content content-text">
+                    <div class="h2 uk-margin-top uk-margin-bottom">Добавьте к основному заказу:</div>
+                    <div class="uk-grid-small uk-child-width-expand@s uk-text-center uk-grid">
+                        <div>
+                            <div class="uk-card uk-flex uk-flex-center uk-flex-bottom addition">
+                                <div><img alt="" src="img/products/plate1.png"></div>
+                                <div class="uk-text-uppercase">
+                                    <div>Семена укропа</div>
+                                    <div><a href="" class="addition-button">Добавить</a></div>
+                                </div>
+                                <div class="price">50 руб.</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-flex uk-flex-center uk-flex-middle addition">
+                                <div><img alt="" src="img/products/plate2.png"></div>
+                                <div class="uk-text-uppercase">
+                                    <div>Острые специи</div>
+                                    <div><a href="" class="addition-button">Добавить</a></div>
+                                </div>
+                                <div class="price">50 руб.</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-flex uk-flex-center uk-flex-middle addition">
+                                <div><img alt="" src="img/products/plate1.png"></div>
+                                <div class="uk-text-uppercase">
+                                    <div>Семена укропа</div>
+                                    <div><a href="" class="addition-button">Добавить</a></div>
+                                </div>
+                                <div class="price">50 руб.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-flex uk-flex-center uk-margin-top">
+                        <ul class="uk-dotnav">
+                            <li class="uk-active"><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="uk-container uk-container-center container">
+                <div class="content content-text">            
+                    <div class="h2 uk-margin-top">2. Выберите способ доставки</div>
+                    <div class="h3b">Доставка курьером</div>
+                    
+                        <table class="uk-table uk-table-divider table table-cart">
+                                <thead>
+                                    <tr>
+                                        <th>Вид доставки</th>                        
+                                        <th class="uk-table-expand">Время доставки</th>
+                                        <th class="uk-table-shrink">Стоимость</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="uk-table-middle">
+                                    <tr>
+                                        <td>
+                                            <div class="uk-flex">
+                                                <div><span class="ico-min"><input type="checkbox"></span></div>
+                                                <div>Доставка зона 1</div>
+                                                <div class="uk-margin-small-left textsmall"><a href="">подробнее</a></div>
+                                            </div>
+                                        </td>
+                                        <td class="textsmall"><div>до 2х часов</div><div>с момента заказа</div></td>
+                                        <td>200 руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="uk-flex">
+                                                <div><span class="ico-min"><input type="checkbox"></span></div>
+                                                <div>Доставка зона 2</div>
+                                                <div class="uk-margin-small-left textsmall"><a href="">подробнее</a></div>
+                                            </div>
+                                        </td>
+                                        <td class="textsmall"><div>до 2х часов</div><div>с момента заказа</div></td>
+                                        <td>250 руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="uk-flex">
+                                                <div><span class="ico-min"><input type="checkbox"></span></div>
+                                                <div>Доставка зона 3</div>
+                                                <div class="uk-margin-small-left textsmall"><a href="">подробнее</a></div>
+                                            </div>
+                                        </td>
+                                        <td class="textsmall"><div>до 2х часов</div><div>с момента заказа</div></td>
+                                        <td>300 руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="uk-flex">
+                                                <div><span class="ico-min"><input type="checkbox"></span></div>
+                                                <div>Доставка зона 4</div>
+                                                <div class="uk-margin-small-left textsmall"><a href="">подробнее</a></div>
+                                            </div>
+                                        </td>
+                                        <td class="textsmall"><div>до 2х часов</div><div>с момента заказа</div></td>
+                                        <td>350 руб.</td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                    
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <div class="price delivery"><b>Внимание!&nbsp;</b> Бесплатная доставка от <b>&nbsp;3000 рублей!</b></div>
+                        <div class="uk-flex">
+                            <div><span class="ico-min"><input type="checkbox"></span></div>
+                            <div>Отложенная доставка</div>
+                        </div>
+                    </div>
+                    <div class="uk-margin-top">
+                        <div class="textsmall textgrey"><i>Осуществляем доставку по Самаре и области. Доставка живого рака осуществляется в течении 1,5 часов, вареного в течении 2-х часов. Время доставки может увеличиться в зависимости от удаленности района.  Более подробнее уточняйте у наших менеджеров по тел. 
+                            +7&nbsp;(846) 991-88-85, +7 (846) 991-88-86</i></div>
+                    </div>
+                    
+                    
+                    <div class="h3b uk-margin-medium-top">Самовывоз из точек продаж</div>
+                    
+                    <table class="uk-table uk-table-divider uk-table-large table table-cart">
+                                <thead>
+                                    <tr>
+                                        <th>Вид доставки</th>                        
+                                        <th class="uk-table-expand">Можно забрать</th>
+                                        <th class="uk-table-shrink">Стоимость</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="uk-table-middle">
+                                    <tr>
+                                        <td>
+                                            <div class="uk-flex">
+                                                <div><span class="ico-min"><input type="checkbox"></span></div>
+                                                <div><div>Авроры 175</div><div class="textsmall textgrey"><i>Режим работы: с 10:00 до 22:00 ежедневно</i></div></div>
+                                            </div>
+                                        </td>
+                                        <td class="textsmall"><div>до 2х часов</div><div>с момента заказа</div></td>
+                                        <td class="textsmall">Бесплатно</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="uk-flex">
+                                                <div><span class="ico-min"><input type="checkbox"></span></div>
+                                                <div><div>Владимирская 31 к1.</div><div class="textsmall textgrey"><i>Режим работы: с 10:00 до 22:00 ежедневно</i></div></div>
+                                            </div>
+                                        </td>
+                                        <td class="textsmall"><div>до 2х часов</div><div>с момента заказа</div></td>
+                                        <td class="textsmall">Бесплатно</td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                    <div class="textsmall textgrey"><i>Уточнить необходимую информацию можно по телефонам в Самаре: 991-88-85, 991-88-86</i></div>
+                    
+                    <div class="h3b uk-margin-medium-top">Способ оплаты</div>
+                    
+                    <table class="uk-table uk-table-divider table table-cart">
+                                <thead>
+                                    <tr>
+                                        <th class="uk-table-expand">Вид оплаты</th>                        
+                                        <th class="uk-table-shrink">Стоимость</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="uk-table-middle">
+                                    <tr>
+                                        <td>
+                                            <div class="uk-flex">
+                                                <div><span class="ico-min"><input type="checkbox"></span></div>
+                                                <div>Наличными</div>
+                                                <div class="uk-margin-small-left textsmall"><a href="">подробнее</a></div>
+                                            </div>
+                                        </td>
+                                        <td class="textsmall">5800 руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="uk-flex">
+                                                <div><span class="ico-min"><input type="checkbox"></span></div>
+                                                <div>Сервисы Сбербанк</div>
+                                                <div class="uk-margin-small-left textsmall"><a href="">подробнее</a></div>
+                                            </div>
+                                        </td>
+                                        <td class="textsmall">5800 руб.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="uk-flex">
+                                                <div><span class="ico-min"><input type="checkbox"></span></div>
+                                                <div>Пластиковая карта  (МИР, VISA, MasterCard)</div>
+                                                <div class="uk-margin-small-left textsmall"><a href="">подробнее</a></div>
+                                            </div>
+                                        </td>
+                                        <td class="textsmall">5800 руб.</td>
+                                    </tr>
+                                </tbody>
+                        </table>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="uk-container uk-container-center container">
+                <div class="content content-text">                    
+                    <p class="h2">3. Заполните контактные данные!</p>
+                    
+                    <div class="blockgrey uk-padding-small">
+                        <form>
+                        <p class="h4">Контактные данные:</p>
+                        <div class="grid">
+                            <div class="col col-1-2 uk-flex uk-flex-column uk-flex-between">
+                                <input class="placeholder" type="text" placeholder="Ваше имя">
+                                <input class="placeholder" type="text" placeholder="Ваш телефон">
+                            </div>
+                            <div class="col-end col-1-2 uk-flex uk-flex-right">
+                                <textarea class="placeholder" placeholder="Комментарий"></textarea>
+                            </div>
+                        </div>
+                        <p class="uk-flex uk-flex-middle uk-margin-small-top uk-margin-small-bottom"><input type="checkbox"> Я согласен с &nbsp;<a href="">Политикой конфиденциальности сайта.</a></p>
+                        <button class="button">Отправить</button>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="uk-container uk-container-center container">
+                <div class="uk-flex uk-flex-column uk-flex-around content footer">
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <ul class="uk-flex footer-nav">
+                            <li><a href=""><div>Акции</div></a></li>
+                            <li><a href=""><div>Доставка и Оплата</div></a></li>
+                            <li><a href=""><div>Оптовым клиентам</div></a></li>
+                            <li><a href=""><div>Контакты</div></a></li>
+                        </ul>
+                        
+                        <div class="footer-app"><img alt="" src="img/app1.png"><img alt="" src="img/app2.png"></div>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <div>&copy; 2011-2018. Царские раки. Все права защищены</div>
+                        <ul class="uk-flex footer-nav">
+                            <li><a href=""><div><img alt="" src="img/soc1.png"></div></a></li>
+                            <li><a href=""><div><img alt="" src="img/soc2.png"></div></a></li>
+                            <li><a href=""><div><img alt="" src="img/soc3.png"></div></a></li>
+                        </ul>
+                        <div><img alt="" src="img/studio.png"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

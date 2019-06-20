@@ -1,0 +1,213 @@
+/* SPECIFICATIONS */
+
+html, body {
+    font-family: 'PT Sans', sans-serif;
+    color: #010101;
+}
+
+a {
+    color: #010101;
+}
+
+h1, h2 {
+    font-size: 32px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h2 + h4 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    color: #313841;
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+ul {
+    padding: 0px;
+}
+
+.title__description {
+    max-width: 760px;
+}
+
+/* NAVIGATION */
+
+nav {
+    font-size: 22px;
+    width: inherit;
+}
+
+.menu {
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+/* HEADER */
+
+header {
+    background-color: #FCDB00;
+    margin-left: 8px;
+    padding-top: 61px;
+    padding-bottom: 107px;
+}
+
+header p {
+    color: #555555;
+}
+
+.offer__icons {
+    font-size: 42px;
+    display: flex;
+    
+}
+
+.offer__icons li {
+    margin-right: 38px;
+    list-style: none;
+}
+
+.ipad {
+    width: inherit;
+    text-align: center;
+}
+
+.slider {
+    margin-top: 62px;
+}
+
+.offer {
+    margin-top: 67px;
+    max-width: 380px;
+}
+
+/* FEATURES */
+
+#features {
+    padding-top: 112px;
+    padding-bottom: 129px;
+}
+
+#features p {
+    color: #898989;
+}
+
+.feature__icon {
+    font-size: 50px;
+    width: 200px;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+
+/* TOUCH */
+
+#touch {
+    background-color: #010101;
+    padding-top: 90px;
+}
+
+#touch h2 {
+    color: #FCDB00;
+}
+
+#touch h4 {
+    color: #898989;
+}
+
+.update {
+    text-align: center;
+    margin-top: 37px;
+    margin-bottom: 46px;
+}
+
+.update__input {
+    width: 580px;
+    height: 50px;
+    padding: 16px 30px 17px;
+    font-size: 16px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.update__submit {
+    width: 126px;
+    height: 50px;
+    background-color: #FCDB00;
+    border: 0px;
+    border-radius: 5px;
+    margin-left: 21px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #010101;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 103px;
+}
+
+footer p {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 992px) {
+    .logo {
+        display: block;
+        margin: 0 auto 30px;
+    }
+    
+    .offer {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .offer__icons {
+        justify-content: center;
+    }
+    
+    .offer__icons li:last-child {
+        margin-right: 0px;
+    }
+    
+    .update__input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .update__submit {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .ipad img {
+        width: 100%;
+    }
+}

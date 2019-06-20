@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Категория</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <script src="js/custom.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="uk-container uk-container-center container">
+                <div>
+                <div class="uk-flex header">
+                    <div>
+                        <div>
+                            <img alt="" src="img/logo.png">
+                        </div>
+                        <div class="menuico">
+                            <img alt="" src="img/menuicog.png">
+                        </div>
+                        <div class="menuico" onclick="spoiler('nav')">
+                            <img alt="" src="img/filterico.png">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="phone">
+                            <div class="uk-text-uppercase textblue"><b>Самара</b> <img alt="" src="img/down.png"></div>
+                            <div class="textgreyd">8 (846) 991-88-85</div>
+                        </div>
+                        <div class="cart">
+                            <div><img alt="" src="img/cart.png"></div>
+                            <div><div>0 товаров</div>
+                                <div>0 рублей</div></div>
+                        </div>
+                    </div>
+                    </div></div>  
+            </div>
+        </header>
+        
+        <nav class="uk-container uk-container-center container" id="nav">
+                <div class="textwhite menu menufilter">
+                    
+                    <div class="uk-flex menureturn">
+                        <div class="ico"><img alt="" src="img/right.png"></div><div>Главная</div>
+                    </div>
+                    
+                    <div class="uk-flex uk-flex-top">
+                        <div class="ico"><img alt="" src="img/menu/m3.png"></div>
+                        <div>
+                            <div class="uk-text-uppercase">Икра</div>
+                            <ul class="menu-list">
+                                    <li><label><input type="checkbox"> Красная</label>
+                                        <ul>
+                                            <li><label><input type="checkbox"> Икра форели</label></li>
+                                            <li><label><input type="checkbox"> Икра кижуча</label></li>
+                                            <li><label><input type="checkbox"> Икра горбуши</label></li>
+                                            <li><label><input type="checkbox"> Икра нерки</label></li>
+                                            <li><label><input type="checkbox"> Икра кеты</label></li>
+                                        </ul>
+                                    </li>
+                                    <li><label><input type="checkbox"> Черная</label>
+                                        <ul>
+                                            <li><label><input type="checkbox"> Осетровая</label></li>
+                                            <li><label><input type="checkbox"> Палтуса</label></li>
+                                            <li><label><input type="checkbox"> Белужья</label></li>
+                                            <li><label><input type="checkbox"> Икра стерляди</label></li>
+                                            <li><label><input type="checkbox"> Икра палтуса</label></li>
+                                        </ul>
+                                    </li>
+                                    <li><label><input type="checkbox"> Икра щуки</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+        
+        <section>
+            <div class="uk-container uk-container-center container">
+                <div class="content content-text content-first">
+                    <ul class="uk-breadcrumb breadcrumb">
+                        <li><a href="">Главная</a></li>
+                        <li><span>Икра</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="uk-container uk-container-center container">
+                <div class="content content-text">
+                    <p class="h1">Икра</p>
+                </div>
+            </div>
+        </section>
+ 
+        <section>
+            <div class="uk-container uk-container-center container">
+                <div class="content content-filter">
+                    <div class="uk-flex uk-flex-between">
+                        <div class="uk-flex uk-flex-middle">
+                            <div class="content-filter-text">Вид:</div>
+                            <div class="uk-flex uk-flex-center uk-flex-middle view active"><img alt="" src="img/table2.png"></div>
+                            <div class="uk-flex uk-flex-center uk-flex-middle view"><img alt="" src="img/tile.png"></div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle">
+                            <div class="content-filter-text">Сортировать по:</div>
+                            <select class="uk-select select">
+                                <option>Популярности</option>
+                                <option>Option 02</option>
+                            </select>
+                        </div>
+                        <div class="uk-flex uk-flex-middle">
+                            <div class="content-filter-text">Цена(руб.):</div>
+                            <select class="uk-select select">
+                                <option>0-1000</option>
+                                <option>Option 02</option>
+                            </select>
+                        </div>
+                        <div class="uk-flex uk-flex-middle">
+                            <div class="content-filter-text">Показывать по:</div>
+                            <select class="uk-select select">
+                                <option>9</option>
+                                <option>Option 02</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="uk-container uk-container-center container">
+                <div class="content content-text">
+                    
+                    <div>    
+                           <div class="uk-card uk-card-default product table">
+                                <div class="product-img">
+                                    <img alt="" src="img/products/product4.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="uk-text-uppercase textblue">Икра осетровая, ст/б, 100гр.</div>
+                                    <div class="textsmall">
+                                        <div class="product-details"> 
+                                            <div class="textgreyd">Более развернутое описание, которое может включать ка текстовый блок, так и информацию о весе, таре и т.п</div>
+                                            <div class="textgreyd">Вес: 100</div>
+                                            <div class="textgreyd">Тара: Стекло</div>
+                                        </div>
+                                        <div>
+                                            <div class="textgreyd">Производитель: Горкунов, Ярославская обл.</div>
+                                        </div>
+                                    </div>
+                               </div>
+                                <div class="product-price">
+                                    <div>
+                                        <div class="uk-flex uk-flex-right uk-flex-middle">
+                                            <div class="price"><div>4800 руб.</div></div>
+                                        </div>
+                                        <div class="measure uk-text-right">Цена указана за банку</div>
+                                        <div class="uk-flex uk-flex-between uk-flex-bottom">
+                                            <div class="amount"><div>-</div><input type="text" value="1"><div>+</div></div>
+                                            <a class="button">Хочу!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        
+                        
+                        <div>    
+                           <div class="uk-card uk-card-default product table">
+                                <div class="product-img">
+                                    <img alt="" src="img/products/product5.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="uk-text-uppercase textblue">Икра горбуши</div>
+                                    <div class="textsmall">
+                                        <div class="product-details"> 
+                                            <div class="textgreyd">Более развернутое описание, текст на 2 строки</div>
+                                            <div class="textgreyd">Вылов 2017г</div>
+                                        </div>
+                                        <div class="textgreyd">Слабосоленая 3-4%</div>
+                                        <div class="product-details">
+                                            <div class="textgreyd">Вес: 100гр</div>
+                                        </div>
+                                            <div class="textgreyd">Фасовка: 100/250/500гр</div>
+                                    </div>  
+                               </div>
+                                <div class="product-price">
+                                    <div>
+                                        <div class="uk-flex uk-flex-right uk-flex-middle">
+                                            <div class="price"><div>430 руб.</div></div>
+                                        </div>
+                                        <div class="measure uk-text-right">Цена указана за 100гр</div>
+                                        <div class="uk-flex uk-flex-between uk-flex-bottom">
+                                            <div class="amount"><div>-</div><input type="text" value="1"><div>+</div></div>
+                                            <a class="button">Хочу!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                            
+                    <div>    
+                           <div class="uk-card uk-card-default product table">
+                                <div class="product-img">
+                                    <img alt="" src="img/products/product4.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="uk-text-uppercase textblue">Икра осетровая, ст/б, 100гр.</div>
+                                    <div class="textsmall">
+                                        <div class="product-details"> 
+                                            <div class="textgreyd">Более развернутое описание, которое может включать ка текстовый блок, так и информацию о весе, таре и т.п</div>
+                                            <div class="textgreyd">Вес: 100</div>
+                                            <div class="textgreyd">Тара: Стекло</div>
+                                        </div>
+                                        <div>
+                                            <div class="textgreyd">Производитель: Горкунов, Ярославская обл.</div>
+                                        </div>
+                                    </div>
+                               </div>
+                                <div class="product-price">
+                                    <div>
+                                        <div class="uk-flex uk-flex-right uk-flex-middle">
+                                            <div class="price"><div>4800 руб.</div></div>
+                                        </div>
+                                        <div class="measure uk-text-right">Цена указана за банку</div>
+                                        <div class="uk-flex uk-flex-between uk-flex-bottom">
+                                            <div class="amount"><div>-</div><input type="text" value="1"><div>+</div></div>
+                                            <a class="button">Хочу!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        
+                        
+                        <div>    
+                           <div class="uk-card uk-card-default product table">
+                                <div class="product-img">
+                                    <img alt="" src="img/products/product5.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="uk-text-uppercase textblue">Икра горбуши</div>
+                                    <div class="textsmall">
+                                        <div class="product-details"> 
+                                            <div class="textgreyd">Более развернутое описание, текст на 2 строки</div>
+                                            <div class="textgreyd">Вылов 2017г</div>
+                                        </div>
+                                        <div class="textgreyd">Слабосоленая 3-4%</div>
+                                        <div class="product-details">
+                                            <div class="textgreyd">Вес: 100гр</div>
+                                        </div>
+                                            <div class="textgreyd">Фасовка: 100/250/500гр</div>
+                                    </div>  
+                               </div>
+                                <div class="product-price">
+                                    <div>
+                                        <div class="uk-flex uk-flex-right uk-flex-middle">
+                                            <div class="price"><div>430 руб.</div></div>
+                                        </div>
+                                        <div class="measure uk-text-right">Цена указана за 100гр</div>
+                                        <div class="uk-flex uk-flex-between uk-flex-bottom">
+                                            <div class="amount"><div>-</div><input type="text" value="1"><div>+</div></div>
+                                            <a class="button">Хочу!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    
+                    <div>    
+                           <div class="uk-card uk-card-default product table">
+                                <div class="product-img">
+                                    <img alt="" src="img/products/product4.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="uk-text-uppercase textblue">Икра осетровая, ст/б, 100гр.</div>
+                                    <div class="textsmall">
+                                        <div class="product-details"> 
+                                            <div class="textgreyd">Более развернутое описание, которое может включать ка текстовый блок, так и информацию о весе, таре и т.п</div>
+                                            <div class="textgreyd">Вес: 100</div>
+                                            <div class="textgreyd">Тара: Стекло</div>
+                                        </div>
+                                        <div>
+                                            <div class="textgreyd">Производитель: Горкунов, Ярославская обл.</div>
+                                        </div>
+                                    </div>
+                               </div>
+                                <div class="product-price">
+                                    <div>
+                                        <div class="uk-flex uk-flex-right uk-flex-middle">
+                                            <div class="price"><div>4800 руб.</div></div>
+                                        </div>
+                                        <div class="measure uk-text-right">Цена указана за банку</div>
+                                        <div class="uk-flex uk-flex-between uk-flex-bottom">
+                                            <div class="amount"><div>-</div><input type="text" value="1"><div>+</div></div>
+                                            <a class="button">Хочу!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        
+                        
+                        <div>    
+                           <div class="uk-card uk-card-default product table">
+                                <div class="product-img">
+                                    <img alt="" src="img/products/product5.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="uk-text-uppercase textblue">Икра горбуши</div>
+                                    <div class="textsmall">
+                                        <div class="product-details"> 
+                                            <div class="textgreyd">Более развернутое описание, текст на 2 строки</div>
+                                            <div class="textgreyd">Вылов 2017г</div>
+                                        </div>
+                                        <div class="textgreyd">Слабосоленая 3-4%</div>
+                                        <div class="product-details">
+                                            <div class="textgreyd">Вес: 100гр</div>
+                                        </div>
+                                            <div class="textgreyd">Фасовка: 100/250/500гр</div>
+                                    </div>  
+                               </div>
+                                <div class="product-price">
+                                    <div>
+                                        <div class="uk-flex uk-flex-right uk-flex-middle">
+                                            <div class="price"><div>430 руб.</div></div>
+                                        </div>
+                                        <div class="measure uk-text-right">Цена указана за 100гр</div>
+                                        <div class="uk-flex uk-flex-between uk-flex-bottom">
+                                            <div class="amount"><div>-</div><input type="text" value="1"><div>+</div></div>
+                                            <a class="button">Хочу!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    
+<div>    
+                           <div class="uk-card uk-card-default product table">
+                                <div class="product-img">
+                                    <img alt="" src="img/products/product4.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="uk-text-uppercase textblue">Икра осетровая, ст/б, 100гр.</div>
+                                    <div class="textsmall">
+                                        <div class="product-details"> 
+                                            <div class="textgreyd">Более развернутое описание, которое может включать ка текстовый блок, так и информацию о весе, таре и т.п</div>
+                                            <div class="textgreyd">Вес: 100</div>
+                                            <div class="textgreyd">Тара: Стекло</div>
+                                        </div>
+                                        <div>
+                                            <div class="textgreyd">Производитель: Горкунов, Ярославская обл.</div>
+                                        </div>
+                                    </div>
+                               </div>
+                                <div class="product-price">
+                                    <div>
+                                        <div class="uk-flex uk-flex-right uk-flex-middle">
+                                            <div class="price"><div>4800 руб.</div></div>
+                                        </div>
+                                        <div class="measure uk-text-right">Цена указана за банку</div>
+                                        <div class="uk-flex uk-flex-between uk-flex-bottom">
+                                            <div class="amount"><div>-</div><input type="text" value="1"><div>+</div></div>
+                                            <a class="button">Хочу!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        
+                        
+                        <div>    
+                           <div class="uk-card uk-card-default product table">
+                                <div class="product-img">
+                                    <img alt="" src="img/products/product5.jpg">
+                                </div>
+                                <div class="product-info">
+                                    <div class="uk-text-uppercase textblue">Икра горбуши</div>
+                                    <div class="textsmall">
+                                        <div class="product-details"> 
+                                            <div class="textgreyd">Более развернутое описание, текст на 2 строки</div>
+                                            <div class="textgreyd">Вылов 2017г</div>
+                                        </div>
+                                        <div class="textgreyd">Слабосоленая 3-4%</div>
+                                        <div class="product-details">
+                                            <div class="textgreyd">Вес: 100гр</div>
+                                        </div>
+                                            <div class="textgreyd">Фасовка: 100/250/500гр</div>
+                                    </div>  
+                               </div>
+                                <div class="product-price">
+                                    <div>
+                                        <div class="uk-flex uk-flex-right uk-flex-middle">
+                                            <div class="price"><div>430 руб.</div></div>
+                                        </div>
+                                        <div class="measure uk-text-right">Цена указана за 100гр</div>
+                                        <div class="uk-flex uk-flex-between uk-flex-bottom">
+                                            <div class="amount"><div>-</div><input type="text" value="1"><div>+</div></div>
+                                            <a class="button">Хочу!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    
+                    <ul class="uk-margin-top pagination">
+                        <li><span class="button">1</span></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="">6</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+        
+        <section>
+            
+        </section>
+            <div class="uk-container uk-container-center container">
+                <div class="content content-text">
+                    <div class="h2">Заголовок описание</div>
+                    <div class="uk-text-bold">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</div>
+                </div>
+            </div>
+        <section>
+            <div class="uk-container uk-container-center container">
+                <div class="content content-text">
+                    <div class="h2">Другие категории</div>
+                    <div class="uk-child-width-expand@s uk-grid-small categories uk-grid">   
+                        <div>
+                            <div class="uk-card uk-card-small uk-flex uk-flex-bottom uk-card-body textwhite" style="background-image: url('img/products/cat2.jpg');">
+                                <div class="uk-flex uk-flex-middle">
+                                    <div class="ico">
+                                        <img alt="" src="img/menu/m2.png">
+                                    </div>
+                                    <div>
+                                        <div class="uk-text-uppercase">Морепродукты и рыба</div>
+                                        <div>от 300 руб/кг</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-small uk-flex uk-flex-bottom uk-card-body textwhite" style="background-image: url('img/products/cat4.jpg');">
+                                <div class="uk-flex uk-flex-middle">
+                                    <div class="ico">
+                                        <img alt="" src="img/menu/m4.png">
+                                    </div>
+                                    <div>
+                                        <div class="uk-text-uppercase">Букет из раков</div>
+                                        <div>от 1600 руб</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-small uk-flex uk-flex-bottom uk-card-body textwhite" style="background-image: url('img/products/cat5.jpg');">
+                                <div class="uk-flex uk-flex-middle">
+                                    <div class="ico">
+                                        <img alt="" src="img/menu/m5.png">
+                                    </div>
+                                    <div>
+                                        <div class="uk-text-uppercase">Специи</div>
+                                        <div>от 50 руб</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="uk-container uk-container-center container">
+                <div class="uk-flex uk-flex-column uk-flex-around content footer">
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <ul class="uk-flex footer-nav">
+                            <li><a href=""><div>Акции</div></a></li>
+                            <li><a href=""><div>Доставка и Оплата</div></a></li>
+                            <li><a href=""><div>Оптовым клиентам</div></a></li>
+                            <li><a href=""><div>Контакты</div></a></li>
+                        </ul>
+                        
+                        <div class="footer-app"><img alt="" src="img/app1.png"><img alt="" src="img/app2.png"></div>
+                    </div>
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <div>&copy; 2011-2018. Царские раки. Все права защищены</div>
+                        <ul class="uk-flex footer-nav">
+                            <li><a href=""><div><img alt="" src="img/soc1.png"></div></a></li>
+                            <li><a href=""><div><img alt="" src="img/soc2.png"></div></a></li>
+                            <li><a href=""><div><img alt="" src="img/soc3.png"></div></a></li>
+                        </ul>
+                        <div><img alt="" src="img/studio.png"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
